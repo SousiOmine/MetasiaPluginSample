@@ -19,11 +19,11 @@ public class MetasiaPluginSample : IClipTypeProvider
 
     public IEnumerable<Type> GetClipTypes()
     {
-        throw new NotImplementedException();
+        yield return typeof(HelloWorldClip);
     }
 
     public void Initialize(IEditorHostContext hostContext)
     {
-        throw new NotImplementedException();
+        Console.WriteLine("サンプルプラグインが読み込まれました！");
     }
 }
